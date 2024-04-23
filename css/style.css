@@ -1,7 +1,8 @@
+/* Fuente de Google */
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
 
 body {
-  margin: 0;
+  margin: 0
 }
 
 .container_16 {
@@ -10,7 +11,7 @@ body {
 	margin: 0 auto;
 }
 
-
+.grid_8,
 .grid_16 {
 	display: inline;
 	float: left;
@@ -28,15 +29,22 @@ body {
 	width: 98.0%;
 }
 
+/**********
+/* Header
+**********/
+
 header {
-  background: #1b5568;
+  background-color: #0000;
   border-bottom: 1px solid #848484;
   padding: 19px 0;
   overflow: hidden;
+  background-image: url(..//img/v1016-b-09.jpg)
 }
 
 header figure {
   float: left;
+  /*height: 175px;
+  width: 175px;*/
 }
 
 header figure img {
@@ -68,13 +76,17 @@ header hgroup h2 {
 #cv {
   width: 45px;
   height: 55px;
-
+  /* IE 9 */
   -ms-transform: rotate(15deg); 
- 
+  /* Chrome, Safari, Opera */
   -webkit-transform: rotate(15deg); 
   transform: rotate(15deg);
   box-shadow: 1px 1px 1px #888888;
 }
+
+/***************
+/* Main section
+***************/
 
 p {
   font: 400 14px oswald, sans-serif;
@@ -107,7 +119,7 @@ section[role=main] h3 {
 }
 
 .experiences ul, .training ul {
- 
+  /*margin-left: 60px;*/
   padding: 0px;
 }
 
@@ -126,7 +138,11 @@ section[role=main] h4 strong {
   list-style: none;
 }
 
-.knowledge .values { 
+/**************
+/* Knowledge 
+***************/
+
+.knowledge .values {
   padding: 0px;
 }
 
@@ -170,8 +186,10 @@ section[role=main] h4 strong {
 }
 
 .grid_8 .information li:before, .grid_8 .contact li:before {
-  
+  /* For a round bullet */
   content: '\2022';
+  /* For a square bullet */
+  /*content:'\25A0';*/
   font: 400 15px oswald, sans-serif;
   margin-bottom: 3px;
   display: block;
@@ -210,6 +228,10 @@ section[role=main] h4 strong {
   background-position: 0 -80px;
 }
 
+.socialmedia {
+
+}
+
 .social {
   width: 40px;
   height: 40px;
@@ -224,56 +246,48 @@ section[role=main] h4 strong {
   float: right;
 }
 
+/**************
+/* Animaciones
+***************/
 
 .fadeInDown {
-  
+  /* Chrome, Safari, Opera */
   -webkit-animation: fadeInDown 4s; 
   animation: fadeInDown 4s;
 }
 
 .fadeInUp {
-
+  /* Chrome, Safari, Opera */  
   -webkit-animation: fadeInUp 4s; 
   animation: fadeInUp 4s;
 }
 
 .fadeInUp2 {
- 
+  /* Chrome, Safari, Opera */  
   -webkit-animation: fadeInUp2 3.7s; 
   animation: fadeInUp2 3.7s;
 }
 
 .fadeInLeft {
- 
+  /* Chrome, Safari, Opera */  
   -webkit-animation: fadeInLeft 4s; 
   animation: fadeInLeft 4s;
 }
 
 .fadeInRight {
+  /* Chrome, Safari, Opera */  
   -webkit-animation: fadeInRight 4s; 
   animation: fadeInRight 4s;
 }
 
 .appear {
+  /* Chrome, Safari, Opera */
   -webkit-animation: appear 6s; 
   animation: appear 6s;
 }
 
-.my-button {
-    padding: 10px 20px;
-    background-color: #2a90af;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .my-button:hover {
-    background-color: #515f70;
-  }
-  .my-button:active {
-    background-color: #515f70;
-  }
-  @-webkit-keyframes fadeInDown {
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeInDown {
     0% {
     opacity: 0;
     transform: translate3d(0, -100%, 0);
@@ -346,4 +360,19 @@ section[role=main] h4 strong {
   100% {
     opacity: 1;
   }
+}
+
+.my-button {
+  padding: 10px 20px;
+  background-color: #2a90af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.my-button:hover {
+  background-color: #515f70;
+}
+.my-button:active {
+  background-color: #515f70;
 }
